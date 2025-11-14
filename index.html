@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
     <style>
         header {
             display: flex;
@@ -24,7 +25,7 @@
         }
 
         .logo img {
-            height: 50px; /* adjust size as needed */
+            height: 50px;
         }
 
         .logo span {
@@ -37,6 +38,19 @@
             text-decoration: none;
             color: #000;
             font-weight: 500;
+        }
+
+        /* Fix for buttons not being clickable */
+        a {
+            position: relative;
+            z-index: 10;
+            pointer-events: auto;
+            cursor: pointer;
+        }
+
+        .hero {
+            position: relative;
+            z-index: 1;
         }
 
         @media (max-width: 768px) {
@@ -67,34 +81,50 @@
 
     <section class="hero">
         <h1>Discover Your LYCO Style</h1>
-        <p>Your style. Your Comfort </p>
-        <p>is our priority.</p>
+
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+
+            <a href="https://www.facebook.com/profile.php?id=61582302963617"
+                style="padding: 12px 25px; background: #1877f2; color: white; border-radius: 6px; 
+                text-decoration: none; font-size: 15px; font-weight: 600;">
+                Message on Facebook
+            </a>
+
+            <a href="https://wa.me/94742400902"
+                style="padding: 12px 25px; background: #25D366; color: white; border-radius: 6px; 
+                text-decoration: none; font-size: 15px; font-weight: 600;">
+                Chat on WhatsApp
+            </a>
+
+        </div>
+
+        <p></p>
+
         <a href="#bottom" class="collection">Collection</a>
     </section>
 
     <section class="products">
         <div class="product">
-            <img src="images/white-hoodie.png" width="200" height="200"
-                alt="White Tee - Stylish white Comfort Tee for all seasons">
+            <img src="images/white-hoodie.png" width="200" height="200" alt="White Tee">
             <h2>White TEE</h2>
             <p>1299.00 LKr</p>
         </div>
+
         <div class="product">
-            <img src="images/black-hoodie.png" width="200" height="200"
-                alt="Black Hoodie - Classic black T for daily wear">
+            <img src="images/black-hoodie.png" width="200" height="200" alt="Black TEE">
             <h2>Black TEE</h2>
             <p>1299.00 LKr</p>
         </div>
+
         <div class="product">
-            <img src="images/black-tshirt.png" width="200" height="200"
-                alt="Black T-shirt - Comfortable and stylish black tee">
+            <img src="images/black-tshirt.png" width="200" height="200" alt="Red TEE">
             <h2>Red TEE</h2>
             <p>1499.00 LKr</p>
         </div>
+
         <div class="product">
-            <img src="images/green-t.png" width="200" height="200"
-                alt="Green T-shirt - Comfortable and stylish Green tee">
-            <h2>Red TEE</h2>
+            <img src="images/green-t.png" width="200" height="200" alt="Green TEE">
+            <h2>Green TEE</h2>
             <p>1499.00 LKr</p>
         </div>
     </section>
@@ -103,6 +133,7 @@
         <a href="https://www.facebook.com/profile.php?id=61582302963617">Connect With Facebook</a>
         <p>&copy; 2025 LYCO Clothing Brand - Born in the island. Worn Everywhere.</p>
     </footer>
+
 </body>
 
 </html>
