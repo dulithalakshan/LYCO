@@ -6,11 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - LYCO CLOTHING BRAND</title>
     <link rel="stylesheet" href="style.css">
-    <!--<link rel="icon" href="images/favicon.png" type="image/x-icon">-->
-    <!--<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">-->
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #fff;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 50px; /* adjust size as needed */
+        }
+
+        .logo span {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
@@ -37,7 +65,10 @@
 
 <body>
     <header>
-        <div class="logo">LYCO Clothing Company</div>
+        <div class="logo">
+            <img src="images/LYCO.png" alt="LYCO Logo">
+            <span>LYCO</span>
+        </div>
         <nav class="links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
