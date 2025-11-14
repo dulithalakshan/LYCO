@@ -8,45 +8,91 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #fff;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 50px; /* adjust size as needed */
+        }
+
+        .logo span {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <div class="logo">LYCO</div>
+        <div class="logo">
+            <img src="images/LYCO.png" alt="LYCO Logo">
+            <span>LYCO</span>
+        </div>
         <nav class="links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
         </nav>
     </header>
+
     <section class="hero">
         <h1>Discover Your LYCO Style</h1>
         <p>Your style. Your Comfort </p>
-        <p>                        is our priority.</p>
+        <p>is our priority.</p>
         <a href="#bottom" class="collection">Collection</a>
     </section>
+
     <section class="products">
         <div class="product">
             <img src="images/white-hoodie.png" width="200" height="200"
                 alt="White Tee - Stylish white Comfort Tee for all seasons">
             <h2>White TEE</h2>
             <p>1299.00 LKr</p>
-            <!--<a href="#">Buy Now</a>-->
         </div>
         <div class="product">
             <img src="images/black-hoodie.png" width="200" height="200"
                 alt="Black Hoodie - Classic black T for daily wear">
             <h2>Black TEE</h2>
             <p>1299.00 LKr</p>
-            <!--<a href="#">Buy Now</a>-->
         </div>
         <div class="product">
             <img src="images/black-tshirt.png" width="200" height="200"
                 alt="Black T-shirt - Comfortable and stylish black tee">
             <h2>Red TEE</h2>
             <p>1499.00 LKr</p>
-            <!--<a href="#">Buy Now</a>-->
         </div>
     </section>
+
     <footer id="bottom">
         <a href="https://www.facebook.com/profile.php?id=61582302963617">Connect With Facebook</a>
         <p>&copy; 2025 LYCO Clothing Brand - Born in the island. Worn Everywhere.</p>
